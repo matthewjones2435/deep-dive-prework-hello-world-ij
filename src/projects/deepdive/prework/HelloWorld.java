@@ -3,8 +3,11 @@ package projects.deepdive.prework;
 public class HelloWorld {
 
   public static void main(String[] args) {
+    salute((args.length >0) ? args[0] : "World");
+  }
 
-    System.out.println("Hello, World!");
+  private static void salute(String target) {
+    System.out.println("Hello " + target + "!");
 
   }
 
